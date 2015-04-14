@@ -6,8 +6,7 @@
 }
 
 .message i {
-
-
+	margin-right: 8px;
 }
 
 
@@ -18,9 +17,8 @@
     border: 1px solid #6DC70C;
 }
 
-.success p {
-
-
+.success i {
+	color: #64A945;
 }
 
 
@@ -31,8 +29,7 @@
     border: 1px solid #82AEE7;
 }
 
-.info p {
-
+.info i {
 
 }
 
@@ -40,24 +37,22 @@
 
 /* error messages */
 .error {
-	border: 1px solid #C42608; color: #c00; 
+	border: 1px solid #C42608; 
     background: #FFF0EF;
 }
 
-.error p {
-
-
+.error i {
+	color: #E74B4A; 
 }
 
 
 
 /* warning messages */
 .warning {
-	background: #FCF3F9;
-    border: 1px solid #E38AC2;
+	background: #FCFFEF;
+    border: 1px solid #E2BA5A;
 }
 
-.warning p {
-
-
+.warning i {
+	color: #E2BA5A;
 }

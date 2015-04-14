@@ -98,8 +98,8 @@ class CfmessageAnax implements \Anax\DI\IInjectionAware
 		$messages = $this->session->get('Cfmessage', []);
 		$html = '';
 		
-		foreach() {
-			$html .= '<div class="message' . $message['type'] . '"><p>' . $message['content'] . '</p></div>';
+		foreach($messages as $message) {
+			$html .= '<div class="message ' . $message['type'] . '"><p>' . $message['content'] . '</p></div>';
 		}
 		
 		$this->clearSession();
