@@ -1,0 +1,63 @@
+/* All messages */
+.message {
+	padding: 5px 15px;    
+    margin: 10px 0;
+    width: 42%;
+}
+
+.message i {
+
+
+}
+
+
+
+/* success messages */
+.success {
+	background: #E0FBCC; 
+    border: 1px solid #6DC70C;
+}
+
+.success p {
+
+
+}
+
+
+
+/* info messages */
+.info {
+	background: #DFEBFB;
+    border: 1px solid #82AEE7;
+}
+
+.info p {
+
+
+}
+
+
+
+/* error messages */
+.error {
+	border: 1px solid #C42608; color: #c00; 
+    background: #FFF0EF;
+}
+
+.error p {
+
+
+}
+
+
+
+/* warning messages */
+.warning {
+	background: #FCF3F9;
+    border: 1px solid #E38AC2;
+}
+
+.warning p {
+
+
+}
