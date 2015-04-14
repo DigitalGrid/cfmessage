@@ -31,6 +31,8 @@ $di->set('Cfmessage', function() use ($di) {
 });
 ```
 
+Note: Before you start adding messages you will have to start a session if you have not done that yet.
+
 Now you can start adding all the messages you want to use. below you can see some examples.
 
 Info messages:
