@@ -3,6 +3,7 @@ Cfmessage
 
 [![Build Status](https://travis-ci.org/DigitalGrid/cfmessage.svg?branch=master)](https://travis-ci.org/DigitalGrid/cfmessage)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/DigitalGrid/cfmessage/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/DigitalGrid/cfmessage/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/DigitalGrid/cfmessage/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/DigitalGrid/cfmessage/?branch=master)
 
 Module that shows flash messages. It handels messages for success, information and errors for the user.
 

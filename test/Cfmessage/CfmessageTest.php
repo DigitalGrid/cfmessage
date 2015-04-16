@@ -20,17 +20,21 @@ class CfmessageTest extends \PHPUnit_Framework_TestCase
     {
         $el = new \Chja\Cfmessage\Cfmessage();
 		
-		/*$messages[] = [
+		$el->addMessage('type', 'content');
+		$res = $el->printMessage();
+		$exp = '<div class="message type"><p>content</p></div>';
+		$this->assertEquals($res, $exp, "Message does not match");
+		
+		$messages[] = [
 			'content' => 'content',
 			'type' => 'type',
 		];
 		
-		$_SESSION['Cfmessage'] = $messages;*/
+		$_SESSION['Cfmessage'] = $messages;
 		
 		$el->addMessage('type', 'content');
 		$res = $el->printMessage();
-		$exp = '<div class="message type"><p>content</p></div>';
-		
+		$exp = '<div class="message type"><p>content</p></div><div class="message type"><p>content</p></div>';
 		$this->assertEquals($res, $exp, "Message does not match");
     }
 	
