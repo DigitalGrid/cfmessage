@@ -8,7 +8,7 @@ namespace Chja\Cfmessage;
 class CfmessageTest extends \PHPUnit_Framework_TestCase
 {
 	
-
+	
 	
 	/**
      * Test 
