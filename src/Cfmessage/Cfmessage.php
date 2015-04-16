@@ -16,7 +16,7 @@ class Cfmessage
 	 */
 	public function __construct()
 	{
-		$sessionKey = 'Cfmessage';
+		$this->sessionKey = 'Cfmessage';
 	}
 	
 	
@@ -30,7 +30,7 @@ class Cfmessage
 	 */
 	public function addMessage($type, $content)
 	{
-		if(isset($_SESSION[])) {
+		if(isset($_SESSION[$this->sessionKey])) {
 			$messages = $_SESSION[$this->sessionKey];
 		}
 		
@@ -52,7 +52,7 @@ class Cfmessage
 	public function addSuccess($content)
 	{
 		$content = '<i class="fa fa-check"></i> ' . $content;
-		$this->addMessage('Success', $content);
+		$this->addMessage('success', $content);
 	}
 	 
 	
@@ -66,7 +66,7 @@ class Cfmessage
 	public function addError($content)
 	{
 		$content = '<i class="fa fa-times"></i> ' . $content;
-		$this->addMessage('Error', $content);
+		$this->addMessage('error', $content);
 	}
 	
 	
@@ -80,7 +80,7 @@ class Cfmessage
 	public function addWarning($content)
 	{
 		$content = '<i class="fa fa-warning"></i> ' . $content;
-		$this->addMessage('Warning', $content);
+		$this->addMessage('warning', $content);
 	}
 	
 	
@@ -126,6 +126,7 @@ class Cfmessage
 	public function clearSession()
 	{
 		$_SESSION[$this->sessionKey] = null;
+		//unset($_SESSION[$this->sessionKey]);
 	}
  
 }
