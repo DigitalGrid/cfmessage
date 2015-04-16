@@ -1,6 +1,8 @@
 Cfmessage
 ====================
 
+[![Build Status](https://travis-ci.org/DigitalGrid/cfmessage.svg?branch=master)](https://travis-ci.org/DigitalGrid/cfmessage)
+
 Module that shows flash messages. It handels messages for success, information and errors for the user.
 
 By Christofer Jadelius
